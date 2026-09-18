@@ -1,0 +1,61 @@
+/* ==========================================================================
+   Christine Noelle Travel — Design Tokens
+   Palette pulled from brand mark: sage green, dusty blush, warm cream/ivory
+   ========================================================================== */
+
+:root {
+  /* Color */
+  --color-ivory: #faf7f1;
+  --color-cream: #f3ede1;
+  --color-sand: #e8dfcd;
+  --color-sage: #6b7a5e;
+  --color-sage-deep: #4f5d44;
+  --color-blush: #e3a9a0;
+  --color-blush-deep: #cf8b81;
+  --color-ink: #26241f;
+  --color-ink-soft: #55524a;
+  --color-white: #ffffff;
+  --color-line: rgba(38, 36, 31, 0.12);
+  --color-line-inverse: rgba(255, 255, 255, 0.28);
+
+  /* Type */
+  --font-display: 'Canela Text', 'Cormorant Garamond', 'Times New Roman', serif;
+  --font-serif: 'Cormorant Garamond', 'Times New Roman', serif;
+  --font-sans: 'Neue Montreal', 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+
+  --tracking-wide: 0.16em;
+  --tracking-wider: 0.22em;
+
+  /* Spacing scale */
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs: 0.75rem;
+  --space-sm: 1.25rem;
+  --space-md: 2rem;
+  --space-lg: 3.5rem;
+  --space-xl: 5.5rem;
+  --space-2xl: 8rem;
+  --space-3xl: 11rem;
+
+  /* Layout */
+  --container-max: 1440px;
+  --gutter: clamp(1.25rem, 4vw, 4rem);
+  --radius-sm: 2px;
+
+  /* Motion */
+  --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out-soft: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 0.4s;
+  --dur-med: 0.9s;
+  --dur-slow: 1.4s;
+
+  color-scheme: light;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-fast: 0.01s;
+    --dur-med: 0.01s;
+    --dur-slow: 0.01s;
+  }
+}

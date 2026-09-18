@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Plan My Trip — Christine Noelle Travel</title>
+  <meta name="description" content="Start planning your next journey with Christine Noelle Travel. Tell us where you want to go and we'll take care of the rest." />
+  <link rel="icon" href="/images/logo/logo-mark-circle.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/styles/main.css" />
+</head>
+<body class="is-preload">
+
+  <header class="site-header" data-theme="light">
+    <div class="site-header__group">
+      <nav class="site-header__nav">
+        <a class="nav-link" href="/index.html">Home</a>
+        <a class="nav-link" href="/about.html">About</a>
+      </nav>
+    </div>
+    <a class="site-header__logo" href="/index.html" aria-label="Christine Noelle Travel — Home">
+      <img src="/images/logo/logo-full.webp" alt="Christine Noelle Travel" />
+    </a>
+    <div class="site-header__group site-header__group--right">
+      <nav class="site-header__nav">
+        <a class="nav-link" href="/benefits.html">Benefits</a>
+        <a class="btn btn--light" href="/plan-my-trip.html">Plan My Trip</a>
+      </nav>
+    </div>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="mobile-nav" aria-label="Mobile">
+    <a href="/index.html">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/benefits.html">Benefits</a>
+    <a href="/plan-my-trip.html">Plan My Trip</a>
+  </nav>
+
+  <main class="page-fade">
+
+    <section class="hero hero--short">
+      <div class="hero__media">
+        <img src="/images/serengeti/SBT-balloon-safari.jpg" alt="Hot air balloon drifting above the Serengeti plains at sunrise" />
+        <span class="media__credit">Four Seasons Serengeti</span>
+      </div>
+      <div class="hero__scrim"></div>
+      <div class="hero__content container">
+        <span class="eyebrow">New Client Inquiry</span>
+        <h1>Plan My Trip</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div style="display:grid; grid-template-columns: 0.85fr 1.15fr; gap: var(--space-xl); align-items:start;" class="plan-grid">
+          <div class="reveal">
+            <span class="eyebrow">Contact Us</span>
+            <h3 style="margin-top: 0.75rem;">Tell Us About Your Trip</h3>
+            <p class="body-text" style="margin-top: 1rem;">
+              Fill out the form and we'll be in touch shortly to start designing your journey. Prefer to
+              reach out directly? Email us any time.
+            </p>
+            <p style="margin-top: var(--space-md);">
+              <a class="btn btn--dark" href="mailto:cnduverney@gmail.com">Email Us Directly</a>
+            </p>
+          </div>
+
+          <div class="form-card reveal" style="--delay: 0.12s;">
+            <form
+              id="trip-form"
+              action="https://formspree.io/f/YOUR_FORM_ID"
+              method="POST"
+            >
+              <!-- Routes submissions to cnduverney@gmail.com via Formspree.
+                   Replace YOUR_FORM_ID after creating a free form at formspree.io — see setup notes below. -->
+              <input type="hidden" name="_subject" value="New Trip Inquiry — Christine Noelle Travel" />
+              <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+              <div class="field-row">
+                <div class="field">
+                  <label for="firstName">First Name *</label>
+                  <input type="text" id="firstName" name="First Name" required />
+                </div>
+                <div class="field">
+                  <label for="lastName">Last Name *</label>
+                  <input type="text" id="lastName" name="Last Name" required />
+                </div>
+              </div>
+
+              <div class="field-row">
+                <div class="field">
+                  <label for="email">Email *</label>
+                  <input type="email" id="email" name="Email" required />
+                </div>
+                <div class="field">
+                  <label for="mobile">Mobile *</label>
+                  <input type="tel" id="mobile" name="Mobile" required />
+                </div>
+              </div>
+
+              <div class="field-row">
+                <div class="field">
+                  <label for="homeAirport">Home Airport / City *</label>
+                  <input type="text" id="homeAirport" name="Home Airport / City" required />
+                </div>
+                <div class="field">
+                  <label for="tripDates">Approximate Trip Dates</label>
+                  <input type="text" id="tripDates" name="Approximate Trip Dates" placeholder="e.g. June 2026" />
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="service">Service Requested</label>
+                <select id="service" name="Service Requested">
+                  <option value="">Select one</option>
+                  <option value="Full Itinerary Design">Full Itinerary Design</option>
+                  <option value="Accommodations Only">Accommodations Only</option>
+                  <option value="Unsure or need more information">Unsure or need more information</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="destinations">Which Destinations Interest You?</label>
+                <input type="text" id="destinations" name="Destinations of Interest" />
+              </div>
+
+              <div class="field">
+                <label for="travelers">Number of Travelers / Bedrooms Needed?</label>
+                <input type="text" id="travelers" name="Travelers / Bedrooms" />
+              </div>
+
+              <div class="field">
+                <label for="occasion">Is This Trip to Celebrate Anything Special?</label>
+                <textarea id="occasion" name="Occasion"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--sage" style="width:100%; margin-top: var(--space-2xs);">
+                Submit Inquiry
+              </button>
+
+              <p class="small" id="form-status" role="status" style="margin-top: var(--space-sm); text-align:center;"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-grid__brand">
+          <img src="/images/logo/logo-full.webp" alt="Christine Noelle Travel" />
+          <p class="small" style="color: rgba(255,255,255,0.75); max-width: 32ch;">A boutique travel agency crafting individualized journeys, worldwide.</p>
+        </div>
+        <div>
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/benefits.html">Benefits</a></li>
+            <li><a href="/plan-my-trip.html">Plan My Trip</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="mailto:cnduverney@gmail.com">cnduverney@gmail.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year"></span> Christine Noelle Travel. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    @media (max-width: 880px) {
+      .plan-grid { grid-template-columns: 1fr !important; }
+    }
+  </style>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script type="module" src="/src/scripts/main.js"></script>
+  <script type="module" src="/src/scripts/form.js"></script>
+</body>
+</html>
