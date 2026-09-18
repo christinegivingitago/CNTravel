@@ -3,6 +3,7 @@ import { resolve } from 'path';
 
 export default defineConfig({
   root: '.',
+  base: process.env.GH_PAGES ? '/CNTravel/' : '/',
   build: {
     outDir: 'dist',
     rollupOptions: {
