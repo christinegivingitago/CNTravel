@@ -105,14 +105,14 @@
 }
 
 .site-header__logo img {
-  height: 72px;
+  height: 92px;
   width: auto;
   border-radius: 50%;
   transition: box-shadow var(--dur-fast) ease, height var(--dur-fast) var(--ease-editorial);
 }
 
 .site-header.is-scrolled .site-header__logo img {
-  height: 58px;
+  height: 76px;
 }
 
 .site-header[data-theme='light']:not(.is-scrolled) .site-header__logo img {
@@ -170,6 +170,7 @@
   border: none;
   padding: 8px;
   z-index: 210;
+  color: inherit;
 }
 .menu-toggle span {
   width: 22px;
@@ -238,7 +239,7 @@
 }
 
 .footer-grid__brand img {
-  height: 96px;
+  height: 120px;
   width: auto;
   margin-bottom: var(--space-sm);
   border-radius: 50%;
