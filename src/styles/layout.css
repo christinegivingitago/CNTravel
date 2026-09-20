@@ -105,14 +105,14 @@
 }
 
 .site-header__logo img {
-  height: 92px;
+  height: 108px;
   width: auto;
   border-radius: 50%;
   transition: box-shadow var(--dur-fast) ease, height var(--dur-fast) var(--ease-editorial);
 }
 
 .site-header.is-scrolled .site-header__logo img {
-  height: 76px;
+  height: 88px;
 }
 
 .site-header[data-theme='light']:not(.is-scrolled) .site-header__logo img {
@@ -239,7 +239,7 @@
 }
 
 .footer-grid__brand img {
-  height: 120px;
+  height: 140px;
   width: auto;
   margin-bottom: var(--space-sm);
   border-radius: 50%;
