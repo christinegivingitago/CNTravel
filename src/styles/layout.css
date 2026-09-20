@@ -105,14 +105,14 @@
 }
 
 .site-header__logo img {
-  height: 108px;
+  height: 135px;
   width: auto;
   border-radius: 50%;
   transition: box-shadow var(--dur-fast) ease, height var(--dur-fast) var(--ease-editorial);
 }
 
 .site-header.is-scrolled .site-header__logo img {
-  height: 88px;
+  height: 110px;
 }
 
 .site-header[data-theme='light']:not(.is-scrolled) .site-header__logo img {
