@@ -38,7 +38,7 @@ Formspree's free tier includes 50 submissions/month, spam filtering, and email n
 
 Property photography lives in `public/images/<property-folder>/` and is credited automatically via the small caption in the bottom-left of each photo (`.media__credit`). Property code → name mapping used across the site:
 
-- `SBT` → Four Seasons Serengeti
+- `SBT` → Four Seasons Safari Lodge Serengeti
 - `MAL` → Four Seasons Resort Maldives at Kuda Huraa
 - `KON` → Four Seasons Resort Hualalai
 - `JAC` → Four Seasons Resort Jackson Hole
