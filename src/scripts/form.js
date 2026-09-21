@@ -35,7 +35,7 @@ if (form) {
         throw new Error('Submission failed');
       }
     } catch (err) {
-      status.textContent = "Something went wrong. Please email us directly at cnduverney@gmail.com.";
+      status.textContent = "Something went wrong. Please email us directly at christine@christinenoelletravel.com.";
       status.style.color = 'var(--color-blush-deep)';
       submitBtn.disabled = false;
       submitBtn.textContent = 'Submit Inquiry';

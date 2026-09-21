@@ -20,10 +20,10 @@ npm run preview    # preview the production build
 
 ## Connecting the "Plan My Trip" form to your email
 
-The form posts to [Formspree](https://formspree.io) so submissions land in **cnduverney@gmail.com** with no backend to maintain.
+The form posts to [Formspree](https://formspree.io) so submissions land in **christine@christinenoelletravel.com** with no backend to maintain.
 
 1. Create a free account at formspree.io and add a new form.
-2. Verify **cnduverney@gmail.com** as the receiving address (Formspree will email a confirmation link).
+2. Verify **christine@christinenoelletravel.com** as the receiving address (Formspree will email a confirmation link).
 3. Copy your form ID (looks like `xxxxabcd`).
 4. In `plan-my-trip.html`, find:
    ```html
