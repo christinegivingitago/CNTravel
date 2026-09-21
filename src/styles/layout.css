@@ -147,10 +147,21 @@
 .btn--light {
   border-color: var(--color-white);
   color: var(--color-white);
+  transition: border-color var(--dur-fast) ease, color var(--dur-fast) ease,
+              background var(--dur-fast) ease;
 }
 .btn--light:hover {
   background: var(--color-white);
   color: var(--color-ink);
+}
+
+.site-header.is-scrolled .btn--light {
+  border-color: var(--color-ink);
+  color: var(--color-ink);
+}
+.site-header.is-scrolled .btn--light:hover {
+  background: var(--color-ink);
+  color: var(--color-ivory);
 }
 
 .btn--sage {
