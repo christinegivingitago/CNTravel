@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Page Not Found — Christine Noelle Travel</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="/images/logo/logo-mark-circle.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/styles/main.css" />
+</head>
+<body class="is-preload">
+
+  <header class="site-header" data-theme="light">
+    <div class="site-header__group">
+      <nav class="site-header__nav">
+        <a class="nav-link" href="/index.html">Home</a>
+        <a class="nav-link" href="/about.html">About</a>
+      </nav>
+    </div>
+    <a class="site-header__logo" href="/index.html" aria-label="Christine Noelle Travel — Home">
+      <img src="/images/logo/logo-full.webp" alt="Christine Noelle Travel" />
+    </a>
+    <div class="site-header__group site-header__group--right">
+      <nav class="site-header__nav">
+        <a class="nav-link" href="/benefits.html">Benefits</a>
+        <a class="btn btn--light" href="/plan-my-trip.html">Plan My Trip</a>
+      </nav>
+    </div>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="mobile-nav" aria-label="Mobile">
+    <a href="/index.html">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/benefits.html">Benefits</a>
+    <a href="/plan-my-trip.html">Plan My Trip</a>
+  </nav>
+
+  <main class="page-fade">
+
+    <section style="position:relative; min-height: 82vh; display:flex; align-items:center; justify-content:center; overflow:hidden; color: var(--color-white);">
+      <div style="position:absolute; inset:0; z-index:0;">
+        <img src="/images/bora-bora/bora-bora-aerial-beach.jpg" alt="Aerial view of a palm-lined beach and coral reef in Bora Bora" style="width:100%; height:100%; object-fit:cover;" />
+      </div>
+      <div style="position:absolute; inset:0; z-index:1; background: rgba(20,19,15,0.4);"></div>
+      <div class="container" style="position:relative; z-index:2; text-align:center; max-width: 640px;">
+        <span class="eyebrow" style="color: var(--color-blush); text-shadow: 0 1px 10px rgba(0,0,0,0.45);">404</span>
+        <h2 style="color:#fff; margin-top: 0.75rem; text-shadow: 0 2px 20px rgba(0,0,0,0.3);">Looks Like This Page Wandered Off the Itinerary</h2>
+        <p style="color: rgba(255,255,255,0.85); margin-top: 1rem; text-shadow: 0 1px 10px rgba(0,0,0,0.35);">The page you're looking for doesn't exist &mdash; but there's still a whole world to explore.</p>
+        <p style="margin-top: var(--space-md);">
+          <a class="btn btn--light" href="/index.html">Back to Home</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-grid__brand">
+          <img src="/images/logo/logo-full.webp" alt="Christine Noelle Travel" />
+          <p class="small" style="color: rgba(255,255,255,0.75); max-width: 32ch;">A boutique travel agency crafting individualized journeys, worldwide.</p>
+        </div>
+        <div>
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/benefits.html">Benefits</a></li>
+            <li><a href="/plan-my-trip.html">Plan My Trip</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="mailto:christine@christinenoelletravel.com">christine@christinenoelletravel.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="https://www.instagram.com/christinenoelletravel" target="_blank" rel="noopener">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year"></span> Christine Noelle Travel. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script type="module" src="/src/scripts/main.js"></script>
+</body>
+</html>

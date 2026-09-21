@@ -3,7 +3,7 @@ import { resolve } from 'path';
 
 export default defineConfig({
   root: '.',
-  base: process.env.GH_PAGES ? '/CNTravel/' : '/',
+  base: '/',
   build: {
     outDir: 'dist',
     rollupOptions: {
@@ -12,6 +12,7 @@ export default defineConfig({
         about: resolve(__dirname, 'about.html'),
         benefits: resolve(__dirname, 'benefits.html'),
         plan: resolve(__dirname, 'plan-my-trip.html'),
+        notFound: resolve(__dirname, '404.html'),
       },
     },
   },

@@ -1,9 +1,9 @@
-name: Deploy preview to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
-      - claude/christine-noelle-travel-site-pujwlj
+      - main
   workflow_dispatch:
 
 permissions:
