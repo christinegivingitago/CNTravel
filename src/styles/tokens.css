@@ -19,9 +19,9 @@
   --color-line-inverse: rgba(255, 255, 255, 0.28);
 
   /* Type */
-  --font-display: 'Canela Text', 'Cormorant Garamond', 'Times New Roman', serif;
+  --font-display: 'Cormorant Garamond', 'Times New Roman', serif;
   --font-serif: 'Cormorant Garamond', 'Times New Roman', serif;
-  --font-sans: 'Neue Montreal', 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+  --font-sans: 'Jost', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
 
   --tracking-wide: 0.16em;
   --tracking-wider: 0.22em;
