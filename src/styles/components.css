@@ -98,8 +98,7 @@
 }
 
 .hero--short {
-  height: 62vh;
-  min-height: 420px;
+  min-height: max(62vh, 420px);
 }
 
 .scroll-cue {
